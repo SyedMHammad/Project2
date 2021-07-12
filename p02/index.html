@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <h1>Cinema</h1>
     <div class="theatre">
         <label>Select Movie:</label>
         <select id="movie">
@@ -18,6 +19,7 @@
             <option value="30">Thor</option>
             <option value="20">Captain America</option>
         </select>
+        </div>
         <ul class="legend">
             <li>
                 <div class="seat"></div>
@@ -93,10 +95,9 @@
                 <div class="seat"></div>
                 <div class="seat"></div>
                 <div class="seat"></div>
-            </div>
-            <p>You've selected <span id="count" class="count">0</span> seats and your total in $ is <span id="total" class="total">0</span></p>
+            </div>  
         </div>
-    </div>
+        <p class="totals">You've selected <span id="count">0</span> seats and your total in $ is <span id="total">0</span></p>
     <a href=".."><button>Back</button></a>
     <script src="script.js"></script>
 </body>
