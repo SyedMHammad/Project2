@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+*{
+    box-sizing: border-box;  
+    list-style-type: none; 
+}
+body{
+    display: flex;
+    flex-direction: column;
+    font-family: 'Open Sans', sans-serif;
+    background-color: #42858c;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    color: white;
+    
+}
+.theatre
+{
+    margin: 20px 0;
+}
+
+.theatre select {
+    background-color: #e4ffff;
+    color: #35393C;
+    padding: 5px 10px 5px 10px;
+    font-size: 18px;
+    border-radius: 8px;
+    border: 0;
+}
+.theatre span
+{
+    color: #feffb4;
+}
+.theatre legend
+{
+    list-style-type: none;
+}
