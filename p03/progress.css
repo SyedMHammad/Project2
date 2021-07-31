@@ -1,34 +1,4 @@
-Skip to content
-Why GitHub? 
-Team
-Enterprise
-Explore 
-Marketplace
-Pricing 
-Search
 
-Sign in
-Sign up
-adil-innovation-lab
-/
-Axiom-Full-Stack-Developer-Batch-2-Module-A
-11
-Code
-Issues
-Pull requests
-Actions
-Projects
-Wiki
-Security
-Insights
-Axiom-Full-Stack-Developer-Batch-2-Module-A/project3/progress.css
-@adil-innovation-lab
-adil-innovation-lab Project 3 completed
-Latest commit c3a81aa on Jun 27
- History
- 1 contributor
-112 lines (100 sloc)  2.8 KB
-  
 /* SOURCE: https://css-tricks.com/styling-cross-browser-compatible-range-inputs-css/ */
 
 input[type='range'] {
