@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Hahmlet:wght@300&display=swap');
+
+*
+{
+    box-sizing: border-box;
+    font-family: 'Hahmlet', serif;
+}
+
+body
+{
+    justify-content: center;
+    align-items: center;
+    font-size: x-large; 
+    display: flex;
+    flex-direction: column;
+    background-image: url(/4K-Programming-Wallpapers-Top-Free-4K-Programming-.jpg);
+    background-repeat: no-repeat;
+    background-size:100%;
+    
+}
+
+h2{
+    font-weight: bolder;
+    padding-bottom: 50px;
+    color: white;
+}
+a{
+    color: black;
+    text-decoration: none;
+}
+.bt1
+{
+    font-size: 30px;
+    margin: 20px;
+    padding-left:10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-top: 8px;
+}
+.bt2
+{
+    font-size: 30px;
+    margin: 20px;
+    padding-left:10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-top: 8px;
+}
+    
+.bt1:hover
+{
+    transform: scale(1.25);
+}
+.bt2:hover
+{
+    transform: scale(1.25);
+
+}
+li{
+    list-style: none;
+}
