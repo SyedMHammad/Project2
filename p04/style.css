@@ -12,20 +12,6 @@ body{
     flex-direction: column;
     background-color: #A9D3FF;
     height: 100vh;
-    position: fixed;
-    top:0;
-    bottom:0;
-    left:0;
-    right:0;
-    width:100%;
-}
-html{
-    position: fixed;
-    top:0;
-    bottom:0;
-    left:0;
-    right:0;
-    height:100%;
     width:100%;
 }
 p
