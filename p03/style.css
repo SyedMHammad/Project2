@@ -18,6 +18,8 @@ body
     background-image: url(/p03/Images/ss_d196d945c6170e9cadaf67a6dea675bd5fa7a046.1920x1080.jpg);
     background-repeat: no-repeat;
     background-size:100%;
+    width:100%;
+    position:fixed;
 
 }
 h1
