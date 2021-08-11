@@ -4,7 +4,6 @@
 {
     box-sizing: border-box;
     font-family: 'Atkinson Hyperlegible', sans-serif;
-
 }
 body{
     align-items: center;
@@ -13,7 +12,18 @@ body{
     flex-direction: column;
     background-color: #A9D3FF;
     height: 100vh;
-    position:relative;
+    position: fixed;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+}
+html{
+    position: fixed;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
 }
 p
 {
@@ -26,25 +36,23 @@ h1{
 
 .currency select
 {
-    padding: 10%;
+    padding: 10px;
     border-radius: 4px;
-    font-size: 40%;
+    font-size: 18px;
     background-color: #E8F1F2;
     border:0;
     position: relative;
-    margin-left: 10px;
 }
 
 .currency input
 {
     padding: 10px;
     border-radius: 4px;
-    font-size: 40%;
+    font-size: 18px;
     text-align: right;
     background-color: #E8F1F2;
     border:0;
     position: relative;
-    margin-left: 10px;
 }
 .flip-rates-container
 {
@@ -58,14 +66,12 @@ h1{
     font-size: 18px;
     text-align: right;
     padding-top: 8px;
-    position: relative;
 }
 .btn{
-    font-size: 40%;
-    width: 150%;
+    font-size: 18px;
+    width: 100px;
     margin: 20px;
     margin-left: 100px;
     padding-top: 8px;
     padding-bottom: 8px;
-    position: relative;
 }
