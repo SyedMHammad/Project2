@@ -10,9 +10,9 @@ body{
     justify-content: center;
     display: flex;
     flex-direction: column;
-    /*background-color: #F7ECE1;*/
     background-color: #A9D3FF;
     height: 100vh;
+    position:relative;
 }
 p
 {
