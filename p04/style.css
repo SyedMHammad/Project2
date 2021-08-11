@@ -28,7 +28,7 @@ h1{
 {
     padding: 10%;
     border-radius: 4px;
-    font-size: 18%;
+    font-size: 40%;
     background-color: #E8F1F2;
     border:0;
     position: relative;
@@ -39,7 +39,7 @@ h1{
 {
     padding: 10px;
     border-radius: 4px;
-    font-size: 18px;
+    font-size: 40%;
     text-align: right;
     background-color: #E8F1F2;
     border:0;
@@ -61,8 +61,8 @@ h1{
     position: relative;
 }
 .btn{
-    font-size: 18%;
-    width: 100%;
+    font-size: 40%;
+    width: 150%;
     margin: 20px;
     margin-left: 100px;
     padding-top: 8px;
