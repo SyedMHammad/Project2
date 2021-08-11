@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible&display=swap');
+
+*
+{
+    box-sizing: border-box;
+    font-family: 'Atkinson Hyperlegible', sans-serif;
+}
+body{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    /*background-color: #F7ECE1;*/
+    background-color: #A9D3FF;
+    height: 100vh;
+}
+p
+{
+    text-align: center;
+    font-size: 20px;
+}
+h1{
+    font-size: 50px;
+}
+
+.currency select
+{
+    padding: 10px;
+    border-radius: 4px;
+    font-size: 18px;
+    background-color: #E8F1F2;
+    border:0;
+}
+
+.currency input
+{
+    padding: 10px;
+    border-radius: 4px;
+    font-size: 18px;
+    text-align: right;
+    background-color: #E8F1F2;
+    border:0;
+}
+.flip-rates-container
+{
+    display: flex;
+}
+.flip-rates-container .xrate
+{
+    margin: 20px;
+    margin-left: 150px;
+    font-size: 18px;
+    text-align: right;
+    padding-top: 8px;
+}
+.btn{
+    font-size: 18px;
+    width: 100px;
+    margin: 20px;
+    margin-left: 100px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
