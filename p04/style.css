@@ -30,6 +30,7 @@ h1{
 }
 .currency select
 {
+    margin-left: 10%;
     padding: 10px;
     border-radius: 4px;
     font-size: 18px;
@@ -60,7 +61,7 @@ h1{
 }
 .btn{
     font-size: 18px;
-    width: 200%;
+    width: 100%;
     margin: 20px;
     margin-left: 100px;
     padding-top: 8px;
