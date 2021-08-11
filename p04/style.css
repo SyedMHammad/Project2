@@ -17,6 +17,7 @@ body{
     bottom:0;
     left:0;
     right:0;
+    width:100%;
 }
 html{
     position: fixed;
@@ -24,6 +25,8 @@ html{
     bottom:0;
     left:0;
     right:0;
+    height:100%;
+    width:100%;
 }
 p
 {
@@ -41,7 +44,7 @@ h1{
     font-size: 18px;
     background-color: #E8F1F2;
     border:0;
-    position: relative;
+    position: fixed;
 }
 
 .currency input
@@ -52,7 +55,7 @@ h1{
     text-align: right;
     background-color: #E8F1F2;
     border:0;
-    position: relative;
+    position: fixed;
 }
 .flip-rates-container
 {
@@ -69,7 +72,7 @@ h1{
 }
 .btn{
     font-size: 18px;
-    width: 100px;
+    width: 200%;
     margin: 20px;
     margin-left: 100px;
     padding-top: 8px;
