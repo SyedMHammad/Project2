@@ -28,6 +28,8 @@ h1
     font-weight: bold;
     transform: scale(3.0,1.5);
     color: burlywood;
+    position:fixed;
+    width:100%;
 }
 
 .video
@@ -46,10 +48,11 @@ h1
 }
 @media(max-width: 800px)
 {
-    .video, .controls
+    .video, .controls, body
     {
         width: 90%;
     }
+
 }
 .controls .play
 {
