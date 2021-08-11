@@ -22,7 +22,12 @@ p
 h1{
     font-size: 50px;
 }
-
+.currency {
+    padding: 30px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
 .currency select
 {
     padding: 10px;
