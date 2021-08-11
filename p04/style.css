@@ -30,6 +30,7 @@ h1{
     font-size: 18px;
     background-color: #E8F1F2;
     border:0;
+    position: relative;
 }
 
 .currency input
@@ -40,10 +41,12 @@ h1{
     text-align: right;
     background-color: #E8F1F2;
     border:0;
+    position: relative;
 }
 .flip-rates-container
 {
     display: flex;
+    position: relative;
 }
 .flip-rates-container .xrate
 {
@@ -52,6 +55,7 @@ h1{
     font-size: 18px;
     text-align: right;
     padding-top: 8px;
+    position: relative;
 }
 .btn{
     font-size: 18px;
@@ -60,4 +64,5 @@ h1{
     margin-left: 100px;
     padding-top: 8px;
     padding-bottom: 8px;
+    position: relative;
 }
