@@ -63,8 +63,20 @@ milli.addEventListener('click',mil);
 
 function sorting()
 {
-    array=array.sort();
+    array.sort(function(a,b){return b.wealth-a.wealth});
     updateDOM();
 }
 
 sort.addEventListener('click',sorting);
+function netwealth()
+{
+    const net=array.reduce((acc,user)=>
+        (acc +=user.wealth),0
+    );
+    const divnet=document.createElement('div');
+    divnet.innerHTML=`<h3><strong>Net Wealth: </strong>$ ${(net).toFixed(2).replace(/\d(?=(\d{3})+\.)/g, '$&,')}</h3>`;
+    main.appendChild(divnet);
+
+
+}
+all.addEventListener('click',netwealth);
