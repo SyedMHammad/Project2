@@ -12,10 +12,13 @@
     <nav>
         <div class="logo">
             <img src="C:\Users\dell\Documents\GitHub\Project2\p06\images\65941221_1080889452117893_8220799298418245632_n.jpg" alt="Image failed to load">
-            <h3>Syed M Hammad</h3>
+            <div class="na">
+                <h3>Syed M Hammad</h3>
+                <button class="close"><i class="far fa-times-circle"></i></button></div>
         </div>
         <div class="projects">
             <ul>
+                <li><strong>Web Development Projects</strong></li>
                 <li><a href="/p02/index.html">Project 1</a></li>
                 <li><a href="/p03/index.html">Project 2</a></li>
                 <li><a href="/p04/index.html">Project 3</a></li>
@@ -24,11 +27,12 @@
         </div>
     </nav>
     <header>
-        <button class="navi"><i class="fas fa-bars"></i></button>
+        <button class="navi" id="navi"><i class="fas fa-bars"></i></button>
         <h1>SYED M HAMMAD</h1>
         <h2>Bachelors in Computer Science</h2>
         <p>A hard working and enthusiastic soon to be Conputer Scientist. Willing to provide services to clients as well as companies.</p>
         <p>Ultimate aim is to establish an organization which on one hand work as a proper Computer Science/Information technology company and on the other hand provide professional level training as well as cousrses to those who are needy. </p>
+        <button class="pop" id="pop">Give Feedback</button>
     </header>
     <div class="about">
         <h2 class="heading">EDUCATION</h2>
@@ -36,7 +40,7 @@
         <h4><strong>Intermediate</strong><br><a class="college" href="https://www.agakhanschools.org/pakistan/akhsskar/index">Aga Khan Higher Secondary School, Karachi.</a><br>(2016-2018)</h4>
         <h4><strong>Matriculation</strong><br><a class="college" href="https://www.facebook.com/ETNSuperHighwayCampusOfficial/">Education Trust Nasra School, Karachi.</a><br>(2016)</h4>
         <h2 class="skills">SKILLS</h2>
-        <ul>
+        <ul class="ski">
             <li><h4>C language</h4></li>
             <li><h4>C++ language</h4></li>
             <li><h4>Python language</h4></li>
@@ -45,14 +49,50 @@
             <li><h4>JavaScript</h4></li>
         </ul>
         <h2 class="projects">PROJECTS</h2>
-        <ul>
-            <li><a href="https://github.com/SyedMHammad/Project2/tree/main/covid"><h4>COVID Management Assistant for Government</h4></a></li>
+        <ul class="pro">
+            <li><a href="https://github.com/SyedMHammad/Project2/tree/main/covid">COVID Management Assistant for Government</a></li>
             <li><a href="https://infallible-jepsen-726d35.netlify.app/">HTML Form Validator</a></li>
             <li><a href="https://inspiring-almeida-d25296.netlify.app/p02/index.html">Cinema Seat Booker</a></li>
-            <li><a href="https://infallible-jepsen-726d35.netlify.app/">HTML Form Validator</a></li>
-            <li><a href="https://infallible-jepsen-726d35.netlify.app/">HTML Form Validator</a></li>
-            <li><a href="https://infallible-jepsen-726d35.netlify.app/">HTML Form Validator</a></li>
+            <li><a href="https://pedantic-blackwell-7f1d55.netlify.app/">Video Player</a></li>
+            <li><a href="https://xenodochial-ritchie-64d6e2.netlify.app/p04/index.html">Exchange Rate Calculator</a></li>
+            <li><a href="https://pedantic-blackwell-7f1d55.netlify.app/p05/index.html">Something about arrays</a></li>
         </ul>
+        <h2 class="Achievements">ACHIEVEMENTS</h2>
+        <ul class="acheive">
+            <li><strong>Won Code Wars (2018)</strong><br>An speed programming competition held at Fast-National University of Computer and Emerging Sciences.</li>
+            <li><strong>Qualified for Semi-Finals of Coders Cup (2018)</strong><br>An speed programming competition held at Fast-National University of Computer and Emerging Sciences.</li>
+            <li><strong>Qualified for Semi-Finals of Coders Cup (2019)</strong><br>An speed programming competition held at Fast-National University of Computer and Emerging Sciences.</li>
+        </ul>
+        <h2 class="Volunteer">VOLUNTEERED</h2>
+        <ul class="vol">
+            <li><strong>PROCOM (2018)</strong><br> Highest rated annual event of Fast-Nuces, Karachi.</li>
+            <li><strong>PROCOM (2019)</strong><br> Highest rated annual event of Fast-Nuces, Karachi.</li>
+            <li><strong>NU-FEST (2019)</strong><br> A well celebrated event of Fast-Nuces, Karachi along with Concert.</li>
+        </ul>
+        <div class="pop" id="pop">
+            <div class="pop-up" id="pop-up">
+                <button class="pop-close" id="pop-close">
+                    <i class="far fa-times-circle"></i>
+                </button>    
+            </div>
+            <div class="pop-header" id="pop-header">
+                <h3>GIVE FEEBACK</h3>
+            </div>
+            <div class="pop-content" id="pop-content">
+                <p>Enter your e-mail then enter valuable feedback.</p>
+                <form class="form" id="form">
+                    <div>
+                        <label for="email">Email:</label>
+                        <input type="email" name="email" placeholder="Enter Email">
+                    </div>
+                    <div>
+                        <label for="feedback">Feedback</label>
+                        <input type="text" name="feedback" placeholder="Enter Feedback">
+                    </div>
+                    <input type="submit" value="Submit" class="Submit-btn">
+                </form>
+            </div>
+        </div>
     </div>
     
 

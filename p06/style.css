@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&display=swap');
+*{
+    font-family: 'Noto Sans JP', sans-serif;
+    box-sizing: border-box;
+}
+
+:root {
+    --modal-durtion: 1s;
+    --primary-color: #686de0;
+    --secondary-color:#dff9fb;
+    --modal-color:#30336b;
+}
+
+body{
+    margin:0;
+}
+nav{
+    background-color: var(--modal-color);
+    color: var(--secondary-color);
+    position: fixed;
+    width: 300px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+
+}
+nav .projects ul li
+{
+    list-style: none;
+    border-bottom: 2px solid var(--primary-color);
+}
+nav 
+{
+    margin-left: 0;
+    margin-bottom: 10px;
+}
+nav .projects ul a
+{
+    text-decoration: none;
+    color: var(--secondary-color);
+}
+nav .logo .na
+{
+    display: flex;
+    justify-content: space-between;
+}
+nav .logo .na .close
+{
+    background-color: transparent;
+    border:none;
+}
+nav .logo .na .close:hover
+{
+    transform: scale(1.1);
+    cursor: pointer;
+}
