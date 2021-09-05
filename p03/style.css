@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&display=swap');
-
 *{
     font-family: 'Noto Sans JP', sans-serif;
     box-sizing: border-box;
@@ -17,19 +16,16 @@ body
     margin: 0;
     background-image: url(/p03/Images/ss_d196d945c6170e9cadaf67a6dea675bd5fa7a046.1920x1080.jpg);
     background-repeat: no-repeat;
+    background-size:cover;
     background-size:100%;
-    width:100%;
-    position:fixed;
 
 }
 h1
 {
-    font-size: 50px;
+    font-size: 300%;
     font-weight: bold;
     transform: scale(3.0,1.5);
     color: burlywood;
-    position:fixed;
-    width:100%;
 }
 
 .video
@@ -37,7 +33,6 @@ h1
     cursor: pointer;
     width: 70%;
     border-radius: 4px;
-    height: 100vh;
 }
 .controls
 {
@@ -49,11 +44,10 @@ h1
 }
 @media(max-width: 800px)
 {
-    .video, .controls, body 
+    .video, .controls
     {
         width: 90%;
     }
-
 }
 .controls .play
 {
@@ -63,7 +57,6 @@ h1
     color: white;
     text-shadow: 2px 2px 2px black;
     font-size: 150%;
-
 }
 .controls .stop
 {
