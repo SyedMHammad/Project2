@@ -23,6 +23,9 @@ nav{
     display: flex;
     flex-direction: column;
     z-index: 100;
+    margin-left: 0;
+    margin-bottom: 10px;
+    transform: translateX(-100%);
 
 }
 nav .logo{
@@ -89,11 +92,6 @@ nav .projects ul
     text-align: left;
     padding-left: 0;
 }
-nav 
-{
-    margin-left: 0;
-    margin-bottom: 10px;
-}
 nav .projects ul a
 {
     text-decoration: none;
@@ -122,4 +120,101 @@ nav .close:hover
 {
     transform: scale(1.1);
     cursor: pointer;
+}
+
+header{
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    font-size: 150%;
+    position: relative;
+    padding: 8px;
+    text-align: center;
+    justify-content: center;
+    height: 150%;
+}
+
+header button
+{
+    font-size: 150%;
+    color: var(--modal-color);
+    border-radius: 8px;
+    background-color: var(--secondary-color);
+    border: 0.05px solid rgba(0,0,0,0.4);
+    cursor: pointer;
+}
+.navi
+{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    padding-top: -1px;
+    background-color: rgba(0,0,0,0.2);
+    color: var(--secondary-color);
+}
+header p{
+    margin: 30px;
+}
+header h1{
+    margin:0;
+}
+.navi:focus
+{
+    border: 1px solid black;
+}
+.pop:focus
+{
+    border: 1px solid black;
+}
+.navi:hover
+{
+    transform: scale(1.05);
+}
+.pop:hover
+{
+    transform: scale(1.05);
+}
+.pop
+{
+    font-size: 20px;
+    padding: 5px 20px 5px 20px;
+    background-color: rgba(0,0,0,0.2);
+    color: var(--secondary-color);
+    margin-bottom: 20px; 
+}
+.about
+{
+    padding: 15px;
+    margin:0 auto;
+    max-width: 100%;
+    width: 800px;
+    font-size: 20px;
+}
+.about .pro a{
+    text-decoration:none;
+    color: black;
+}
+.pro li:hover{
+    transform: scale(1.005);
+    cursor: pointer;
+}
+
+.about p a.college{
+    color: black;
+    text-decoration-color: grey;
+}
+.acheive li{
+    margin: 10px;
+    padding:5px;
+}
+.vol li{
+    margin: 10px;
+    padding:5px;
+}
+.pro li{
+    margin: 10px;
+    padding:5px;
+}
+
+nav ul li:first-of-type{
+    border-top: 2px solid var(--primary-color);
 }
