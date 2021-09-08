@@ -22,12 +22,72 @@ nav{
     height: 100vh;
     display: flex;
     flex-direction: column;
+    z-index: 100;
 
+}
+nav .logo{
+    
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+nav .logo img{
+    height: 75px;
+    width: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin-top: 20px;
+
+}
+nav .logo .na{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+nav .logo .na h3{
+    font-weight: bolder;
+    font-size: 25px;
+}
+nav .projects
+{
+    
+    width: 300px;
+    align-items: left;
+    justify-content: left;
+    display: flex;
+    flex-direction: column;
 }
 nav .projects ul li
 {
     list-style: none;
     border-bottom: 2px solid var(--primary-color);
+    align-items: center;
+    justify-content: left;
+    display: flex;
+    padding: 10px;
+    width: 300px;
+    padding-left: 8px;
+   
+}
+nav .projects ul li a:hover
+{
+    transform: scale(1.1);
+
+}
+nav .projects ul
+{
+    align-items: left;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    width: 300px;
+    margin: 0;
+    text-align: left;
+    padding-left: 0;
 }
 nav 
 {
@@ -44,12 +104,21 @@ nav .logo .na
     display: flex;
     justify-content: space-between;
 }
-nav .logo .na .close
+nav .close
 {
     background-color: transparent;
     border:none;
+    font-size: large;
+    font-weight: bold;
+    padding: 2px;
+    margin-left: 5px;
+    color: var(--secondary-color);
+    align-items: left;
+    justify-content: left;
+    width: max-content;
 }
-nav .logo .na .close:hover
+
+nav .close:hover
 {
     transform: scale(1.1);
     cursor: pointer;
