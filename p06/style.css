@@ -13,13 +13,14 @@
 
 body{
     margin:0;
+    transition: transform 0.25s ease;
 }
 nav{
     background-color: var(--modal-color);
     color: var(--secondary-color);
     position: fixed;
     width: 300px;
-    height: 100vh;
+    height:275vh;
     display: flex;
     flex-direction: column;
     z-index: 100;
@@ -102,24 +103,11 @@ nav .logo .na
     display: flex;
     justify-content: space-between;
 }
-nav .close
-{
-    background-color: transparent;
-    border:none;
-    font-size: large;
-    font-weight: bold;
-    padding: 2px;
-    margin-left: 5px;
-    color: var(--secondary-color);
-    align-items: left;
-    justify-content: left;
-    width: max-content;
-}
 
-nav .close:hover
-{
-    transform: scale(1.1);
-    cursor: pointer;
+
+.pops.show-modal{
+    display:block;
+
 }
 
 header{
@@ -217,4 +205,146 @@ header h1{
 
 nav ul li:first-of-type{
     border-top: 2px solid var(--primary-color);
+}
+.popcontain
+{
+    color: rgba(0,0,0,0.6);
+    position: fixed;
+    top: 0;
+    bottom:0;
+    right: 0;
+    left: 0;
+    display: none;
+    
+}
+span{
+    color: green;
+    font-size: 16px;
+    align-items: center;
+    text-align: center;
+    width:300px;
+}
+.popcontain.show-modal{
+    display:block;
+}
+.pops.increase{
+    height: 450px;
+}
+body.show-nav{
+    transform: translateX(300px);
+}
+.pops{
+    background-color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    overflow: hidden;
+    height: 380px;
+    animation-name: modalopen;
+    animation-duration: var(--modal-durtion);
+
+}
+@keyframes modalopen {
+    from{
+        opacity:0;
+    }
+    to{
+        opacity:1;
+    }
+}
+
+.pop-up{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+    background-color: var(--modal-color);
+    color: var(--secondary-color);
+    padding: 0px 10px 0px 10px;
+}
+.pop-up h3{
+    width: 400px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+.pop-close{
+    height: 50%;
+    border-radius: 5px;
+    background-color: transparent;
+    border:none;
+    font-size: large;
+    color: var(--secondary-color);
+}
+.pop-content{
+    padding: 0 10px 0 10px;
+    color: black;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    
+}
+
+.form{
+    padding: 20px;
+    align-items: left;
+    text-align: left;
+    position: fixed;
+    width: 430px;
+    padding-top: 0;
+}
+
+.form .email{
+    margin-bottom: 5px;
+    width: max-content;
+}
+.form .email input{
+    width:335px;
+    border-radius: 5px;
+    border-width: 0.2px;
+    /* margin-left: 35px ; */
+}
+.form .feedback{
+    margin-bottom: 5px;
+    width: max-content;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+.form .feedback input{
+    width: 300px;
+    height: 100px;
+    margin-left: 4px;
+    border-radius: 5px;
+    border-width: 0.2px;
+    padding-bottom: 70px;
+}
+
+
+input[type="text"]::placeholder { 
+    position: absolute;
+    margin-top: 4px;
+}
+.btn{
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    padding: 20px;
+}
+.btn input{
+    background-color: var(--modal-color);
+    color: var(--secondary-color);
+    border-radius: 6px;
+    padding:8px 20px 8px 20px;
+}
+.btn input:hover{
+    transform: scale(1.05);
+    cursor: pointer;
+}
+.pop-close:hover{
+    transform: scale(1.05);
+    cursor: pointer;
 }
