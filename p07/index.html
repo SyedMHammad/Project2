@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <title>Hangman</title>
+</head>
+<body>
+    <header>
+        <h1>Hangman</h1>
+       <p> Guess the word and save innocent Man from getting Hanged :)</p>
+    </header>
+    <div class="gamecontainer">
+        <div class="picture">
+            <svg class="game">
+                <!-- platform and pole -->
+                <line x1="70" y1="30" x2="150" y2="30" />
+                <line x1="150" y1="30" x2="150" y2="60" />
+                <line x1="70" y1="30" x2="70" y2="300" />
+                <line x1="20" y1="300" x2="120" y2="300" />
+                <!-- Head -->
+                <circle cx="150" cy="80" r="20" />
+                <!-- body -->
+                <line x1="150" y1="100" x2="150" y2="200"/>
+                <!-- arms -->
+                <line x1="150" y1="120" x2="115" y2="180" />
+                <line x1="150" y1="120" x2="185" y2="180" />
+                <!-- legs -->
+                <line x1="150" y1="200" x2="115" y2="260" />
+                <line x1="150" y1="200" x2="185" y2="260" />
+            </svg>
+        </div>
+        <div class="correct-container" id="correct-container">
+            <p>WORD:</p>
+            <div class="correct">
+            <div class="letter">h</div>
+            <div class="letter">a</div>
+            <div class="letter">m</div>
+            <div class="letter">m</div>
+            <div class="letter">a</div>
+            <div class="letter">d</div>
+        </div>
+        </div>
+        <div class="incorrect-container">
+            <p>INCORRECT GUESSES:</p>
+            <span>a,b,c,d,e,f</span>
+        </div>
+
+    </div>
+    <div class="gameover-container-show" id="gameover-container">
+        <div class="gameover">
+            <div class="closeheading">
+                <h2>Game Over</h2>
+        <button class="close" id="close"><i class="far fa-times-circle"></i></button>  
+    </div>
+        <h3>Congrats! You Saved The Man!</h3>
+        <button class="gameover-btn">Play again</button>
+    </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
