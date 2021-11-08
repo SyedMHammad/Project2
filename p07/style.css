@@ -72,13 +72,10 @@ header p
     text-align: center;
     align-items: center;
     justify-content: center;
-    
+    display: flex;
     height: 70px;
 }
-.correct-container p
-{
-    font-size: 36px;
-}
+
 .letter{
     margin-left:5px;
     margin-right: 5px;
