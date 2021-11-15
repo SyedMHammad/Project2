@@ -91,7 +91,7 @@ header p
 }
 .incorrect-container{
     position: absolute;
-    top: 20px;
+    top: 250px;
     right: 200px;
     flex-direction: column;
     text-align: right;
@@ -113,7 +113,7 @@ header p
     display: none;
 
 }
-.gameover-container-show{
+.gameover-container.show{
     display: flex;
 }
 .close{
@@ -124,6 +124,9 @@ header p
     justify-content: center;
     align-items: center;
     font-size: large;
+}
+.close:hover{
+    transform: scale(1.1);
 }
 .closeheading{
     display: flex;
@@ -162,10 +165,28 @@ header p
     border-radius: 10px;
     transition: transform 0.5s ease-in-out;
 }
+.notificationw
+{
+    position: absolute;
+    padding: 15px;
+    bottom: -80px;
+    background-color: rgba(0,0,0,0.3);
+    height: 55px;
+    border-radius: 10px;
+    transition: transform 0.5s ease-in-out;
+}
+.notificationw.show{
+    transform:translateY(-100px)
+}
 .notification.show{
     transform:translateY(-100px)
 }
 .notification p
+{
+    margin: 0;
+
+}    
+.notificationw p
 {
     margin: 0;
 
