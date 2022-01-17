@@ -26,7 +26,7 @@ function searchmeal(e)
                 {
                     resultheading.innerHTML=`
                     <h2>Search Results for "${search.value}"</h2>`;
-                    console.log(data.meals);
+                   // console.log(data.meals);
                     searchresult.innerHTML = data.meals.map( meal => `
                     <div class="meal">
                         <img src="${meal.strMealThumb}" alt="${meal.strMeal}" />
@@ -51,5 +51,30 @@ function searchmeal(e)
 
     }
 }
+function getdetails(mealID)
+{
+    fetch(`https://www.themealdb.com/api/json/v1/1/lookup.php?i=${mealID}`)
+    .then(res => res.json())
+    .then(data=>{
+        console.log(data);
+    })
+}
 search.addEventListener("submit",searchmeal);
 sbtn.addEventListener("click",searchmeal);
+searchresult.addEventListener('click', e=> {
+    const mealinfo=e.path.find(item => {
+        if(item.classList)
+        {
+            return item.classList.contains('meal-info');
+        }
+        else
+        {
+            return false;
+        }
+    })
+    if(mealinfo)
+    {
+        const mealID=mealinfo.getAttribute('data-mealID');
+        getdetails(mealID);
+    }
+})
