@@ -92,9 +92,32 @@ input[type="text"]{
     text-align: center;
     position: relative;
 }
+.mealdetails
+{
+    width: 800px;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 60%;
+    left:28%;
+    font-size: 25px;
+   /* border: 1px white dashed;*/
+}
+.mealdetails ul
+{
+    text-align: left;
+    list-style: none;
+}
 .meal img{
     height: 100%;
     width: 100%;
+    border:2px solid white;
+    border-radius: 4px;
+}
+.newimage
+{
+    height: 300px;
+    width:300px;
     border:2px solid white;
     border-radius: 4px;
 }
